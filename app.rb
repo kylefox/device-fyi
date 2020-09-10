@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "Your IP address is #{request.ip}"
+  erb :index
 end

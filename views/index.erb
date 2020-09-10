@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your device, FYI</title>
+    <style media="screen">
+      body {
+        font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        padding: 1rem;
+      }
+      table {
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+      }
+      th, td {
+        border: 1px solid #000;
+        text-align: left;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Your device, FYI:</h2>
+
+    <table>
+      <tr>
+        <th>IP Address</th>
+        <td><%= request.ip %></td>
+      </tr>
+      <tr>
+        <th>User Agent String</th>
+        <td><%= request.user_agent %></td>
+      </tr>
+    </table>
+
+    <a href="https://github.com/kylefox/device-fyi">Source Code</a>
+  </body>
+</html>
