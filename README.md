@@ -1,4 +1,4 @@
-http://your.device.fyi/
+# https://your.device.fyi/
 
 ---
 
