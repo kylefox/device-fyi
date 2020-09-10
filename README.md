@@ -1,7 +1,5 @@
 # https://your.device.fyi/
 
----
-
 Provides basic device information (IP address, browser, operating system). 👨‍💻
 
 No cookies, tracking, or marketing of any kind. 🙅‍♀️
