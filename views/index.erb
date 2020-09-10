@@ -17,6 +17,12 @@
         text-align: left;
         padding: 1rem;
       }
+      th {
+        background: #f0f0f0;
+      }
+      nav a {
+        margin-right: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -28,11 +34,22 @@
         <td><%= request.ip %></td>
       </tr>
       <tr>
+        <th>Browser</th>
+        <td><%= browser.name %> <%= browser.full_version %></td>
+      </tr>
+      <tr>
+        <th>Platform</th>
+        <td><%= browser.platform.name %> <%= browser.platform.version %></td>
+      </tr>
+      <tr>
         <th>User Agent String</th>
         <td><%= request.user_agent %></td>
       </tr>
     </table>
 
-    <a href="https://github.com/kylefox/device-fyi">Source Code</a>
+    <nav>
+      <a href="https://github.com/kylefox/device-fyi">Source code</a>
+      <a href="https://github.com/kylefox/device-fyi/issues">Report an issue</a>
+    </nav>
   </body>
 </html>
