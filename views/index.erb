@@ -45,6 +45,34 @@
         <th>User Agent String</th>
         <td><%= request.user_agent %></td>
       </tr>
+      <tr>
+        <th>JavaScript</th>
+        <td>
+          <noscript>Disabled</noscript>
+          <script>document.write('Enabled');</script>
+        </td>
+      </tr>
+      <tr>
+        <th>Display size</th>
+        <td>
+          <noscript>Unknown</noscript>
+          <script>document.write(`${window.screen.width} × ${window.screen.height}`);</script>
+        </td>
+      </tr>
+      <tr>
+        <th>Device pixel ratio</th>
+        <td>
+          <noscript>Unknown</noscript>
+          <script>document.write(window.devicePixelRatio);</script>
+        </td>
+      </tr>
+      <tr>
+        <th>Do Not Track</th>
+        <td>
+          <noscript>Unknown</noscript>
+          <script>document.write(navigator.doNotTrack);</script>
+        </td>
+      </tr>
     </table>
 
     <nav>
