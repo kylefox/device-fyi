@@ -1,6 +1,4 @@
-http://your.device.fyi/
-
----
+# https://your.device.fyi/
 
 Provides basic device information (IP address, browser, operating system). 👨‍💻
 
